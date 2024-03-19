@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [luma suite]">
+  <test thread-count="5" name="luma test(failed)">
+    <parameter name="firstName" value="Thomas"/>
+    <parameter name="lastName" value="Shelby"/>
+    <parameter name="zipCode" value="122345"/>
+    <parameter name="address" value="1 N Dearborn st"/>
+    <parameter name="city" value="Chicago"/>
+    <parameter name="telephone" value="333333333333"/>
+    <parameter name="email" value="test@mail.com"/>
+    <classes>
+      <class name="selenium.com.luma.tests.LumaScript">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startUp"/>
+          <include name="validatePurchase"/>
+        </methods>
+      </class> <!-- selenium.com.luma.tests.LumaScript -->
+    </classes>
+  </test> <!-- luma test(failed) -->
+</suite> <!-- Failed suite [luma suite] -->

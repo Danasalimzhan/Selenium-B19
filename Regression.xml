@@ -1,0 +1,12 @@
+<suite name="Regression" >
+    <test name="Regression for all" >
+        <classes>
+            <class name="selenium.com.yale.tests.YaleScript"></class>
+            <class name="selenium.com.sauce_lab.tests.SauceLabScript"></class>
+            <class name="selenium.com.qa_fox.tests.QAFoxScript"></class>
+            <class name="selenium.com.php.test.PhpTest"></class>
+            <class name="selenium.com.blaze.tests.BlazeScript"></class>
+
+        </classes>
+    </test>
+</suite>

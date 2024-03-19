@@ -1,0 +1,19 @@
+<!DOCTYPE suite [
+        <!ELEMENT suite (test)*>
+        <!ATTLIST suite
+                name CDATA #REQUIRED>
+        <!ELEMENT test (classes)*>
+        <!ATTLIST test
+                name CDATA #REQUIRED>
+        <!ELEMENT classes (class)*>
+        <!ELEMENT class (#PCDATA)>
+        <!ATTLIST class
+                name CDATA #REQUIRED>
+        ]>
+<suite name="yale suite" >
+    <test name="yale test" >
+       <classes>
+           <class name="selenium.com.yale.tests.YaleScript"></class>
+       </classes>
+    </test>
+</suite>

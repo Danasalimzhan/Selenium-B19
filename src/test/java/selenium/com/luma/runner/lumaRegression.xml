@@ -1,0 +1,30 @@
+<!DOCTYPE suite [
+        <!ELEMENT suite (test)*>
+        <!ATTLIST suite
+                name CDATA #REQUIRED>
+        <!ELEMENT test (parameter|classes)*>
+        <!ATTLIST test
+                name CDATA #REQUIRED>
+        <!ELEMENT parameter (#PCDATA)>
+        <!ATTLIST parameter
+                name CDATA #REQUIRED
+                value CDATA #REQUIRED>
+        <!ELEMENT classes (class)*>
+        <!ELEMENT class (#PCDATA)>
+        <!ATTLIST class
+                name CDATA #REQUIRED>
+        ]>
+<suite name="luma suite" >
+    <test name="luma test" >
+        <parameter name="email" value="test@mail.com"></parameter>
+        <parameter name="firstName" value="Thomas"></parameter>
+        <parameter name="lastName" value="Shelby"></parameter>
+        <parameter name="address" value="1 N Dearborn st"></parameter>
+        <parameter name="city" value="Chicago"></parameter>
+        <parameter name="zipCode" value="122345"></parameter>
+        <parameter name="telephone" value="333333333333"></parameter>
+        <classes>
+            <class name="selenium.com.luma.tests.LumaScript"></class>
+        </classes>
+    </test>
+</suite>

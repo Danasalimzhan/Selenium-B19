@@ -1,0 +1,11 @@
+<suite name="test" >
+    <test name="test" >
+        <parameter name="firstName" value="Thomas"></parameter>
+        <parameter name="lastName" value="Shelby"></parameter>
+        <parameter name="address" value="111 N Clark st"></parameter>
+        <parameter name="city" value="Chicago"></parameter>
+        <classes>
+            <class name="selenium.xmlParameters.ParametersShowCase"></class>
+        </classes>
+    </test>
+</suite>
